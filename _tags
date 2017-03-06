@@ -23,9 +23,11 @@ true: annot, bin_annot
 <src/*.ml{,i,y}>: package(rresult)
 # Executable ounit_test
 <test/test.{native,byte}>: package(oUnit)
+<test/test.{native,byte}>: package(QCheck)
 <test/test.{native,byte}>: package(rresult)
 <test/test.{native,byte}>: use_socks
 <test/*.ml{,i,y}>: package(oUnit)
+<test/*.ml{,i,y}>: package(QCheck)
 <test/*.ml{,i,y}>: package(rresult)
 <test/*.ml{,i,y}>: use_socks
 # OASIS_STOP
